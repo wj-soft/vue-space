@@ -1,10 +1,23 @@
 {
-  "name": "vue-space",
+  "name": "vue-space2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://github.com/wj-soft/vue-space.git",
+  "bug": {
+    "email": "614@daum.net",
+    "url": "https://github.com/wj-soft/vue-space/issues"
+  },
+  "author": {
+    "name": "space lee"
+  },
+  "files": [
+    "dist/*",
+    "postcss.config.js"
+  ],
+  "main": "./dist/vs.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vs src/components/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
