@@ -1,5 +1,5 @@
 <template>
-  <div class="vs-button">
+  <div class="vs-button" v-bind:style="{ background: $vs.background }">
     <slot></slot>
   </div>
 </template>
@@ -11,7 +11,6 @@ export default {
 
 <style lang="scss" scoped>
 .vs-button {
-  background: red;
   width: 100px;
   height: 100px;
 }
